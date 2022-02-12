@@ -1,0 +1,124 @@
+.productCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__wrapper {
+        width: 272px;
+        padding: 15px;
+        border: 1px solid #e2e7e9;
+        border-radius: 10px;
+        font-size: 15px;
+        flex: 0 1 calc(20% - 30px);
+        margin-bottom: 30px;
+
+        &__img {
+            object-fit: cover;
+            flex-shrink: 1;
+            width: 100%;
+            margin-bottom: 4px;
+        }
+
+        h4 {
+            color: #555555;
+        }
+
+        &__ship {
+            color: #51b549;
+            height: 19px;
+            margin-top: 5px;
+        }
+
+        &__price {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        &__button {
+            padding: 10px 0px;
+            cursor: pointer;
+            border-radius: 22px;
+            background-color: #fff;
+            border: 1px solid #044dc3;
+            color: #044dc3;
+            transition: all 0.2s ease-in;
+            width: 100%;
+            margin-top: 5px;
+
+            &:hover {
+                color: #fff;
+                background-color: #044dc3;
+                transform: translate(2px, -2px);
+            }
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+
+    &__btn__wrapper {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #e2e7e9;
+        border-radius: 25px;
+        height: 40px;
+        padding: 5px;
+
+        button {
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: #044dc3;
+            background-color: #f0f2f7;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                color: #fff;
+                background-color: #044dc3;
+                transform: translate(2px, -2px);
+            }
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+
+        span {
+            font-size: 22px;
+            color: #555555;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .productCard__wrapper {
+        flex: 0 1 calc(25% - 30px);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .productCard__wrapper {
+        flex: 0 1 calc(33% - 30px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .productCard__wrapper {
+        flex: 0 1 calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productCard {
+        justify-content: center;
+        &__wrapper {
+            flex: 0 1 calc(100% - 30px);
+        }
+    }
+}

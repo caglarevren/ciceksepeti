@@ -1,0 +1,32 @@
+.header__container {
+    height: 74px;
+    background-color: #044dc3;
+    color: #fff;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.breadcrumb__text {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+
+    span {
+        color: #51b549;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__container h1{
+        margin-left: 16px;
+    }
+
+    .breadcrumb__text {
+        padding: 0px 16px;
+    }
+}

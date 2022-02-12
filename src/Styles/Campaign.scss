@@ -1,0 +1,53 @@
+.campaign {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 105px;
+
+    &__card {
+        display: flex;
+        flex: 0 1 calc(33% - 30px);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        &__imagewrapper {
+            width: 167px;
+            height: 133px;
+            border-radius: 10px;
+            margin-right: 35px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-size: 24px;
+            color: #707070;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 121px;
+            height: 30px;
+            background-color: #fff;
+            color: #e64e41;
+            border-radius: 15px;
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .campaign {
+        justify-content: center;
+
+        &__card {
+            flex: 0 1 calc(100% - 30px);
+        }
+    }
+}
